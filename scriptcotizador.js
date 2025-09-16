@@ -20,14 +20,14 @@ function actualizarCotizacion() {
 
     var descuento = 0;
 
-    if (duracion == 6) {
+    if (duracion == 1) {
         descuento = 0.10;
-    } else if (duracion == 12) {
+    } else if (duracion == 4) {
         descuento = 0.20;
     }
 
     var precioConDescuento = precioBase - (precioBase * descuento); 
-    // precio a pagar por 1 estudiante por 1 mes
+    
 
     var totalConDescuento = precioConDescuento * estudiantes * duracion;
     var totalSinDescuento = precioBase * estudiantes * duracion;
