@@ -1,0 +1,76 @@
+/* Navbar */
+.navbar {
+  background-color: hsl(330, 87%, 47%);
+}
+
+.navbar .nav-link,
+.navbar-brand {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ffe6f0 !important;
+}
+
+/* Tarjetas */
+.card {
+  border-radius: 20px;
+  border: 2px solid hsl(330, 87%, 47%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Caja personalizada */
+.custom-box {
+  background-color: #fff;
+  border: 2px solid hsl(330, 87%, 47%);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.custom-box h2 {
+  color: hsl(330, 87%, 47%);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.container {
+  display: flex;
+  justify-content: space-between; /* distribuye dejando espacios iguales entre elementos */
+  align-items: center;            /* centra verticalmente */
+  gap: 20px;
+}

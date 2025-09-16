@@ -1,0 +1,59 @@
+body {
+  background: linear-gradient(135deg, pink, rgb(249, 72, 160));
+  color: #222;
+  padding: 15px;
+}
+.navbar {
+  background: rgb(255, 0, 123);
+}
+.navbar-brand, .nav-link {
+  color: white !important;
+}
+.fugaz-one-regular {
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+h1 {
+  color: fuchsia;
+}
+label {
+  display: block;
+  margin-top: 10px;
+  color: rgb(9, 10, 10);
+}
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 2px solid pink;
+  border-radius: 8px;
+}
+input:focus, select:focus {
+  border-color: rgb(249, 30, 150);
+  outline: none;
+}
+button {
+  background: linear-gradient(90deg, rgb(255, 26, 106), purple);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover {
+  background: green;
+}
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: purple;
+}
