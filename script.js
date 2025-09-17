@@ -36,7 +36,7 @@ else{
     document.getElementById("password").style.color = "red"
 }
 
-if (0 < edad < 14){
+if (edad > 0 && edad < 14){
     alert("No tienes la edad adecuada para acceder a estos cursos")
 } else if (edad< 1)
     alert("Ingrese un número valido")
