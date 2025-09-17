@@ -24,7 +24,8 @@ function actualizarCotizacion() {
         descuento = 0.10;
     } else if (duracion == 4) {
         descuento = 0.20;
-    }
+    } else if (duracion == 10){
+        descuento = 0.30;
 
     var precioConDescuento = precioBase - (precioBase * descuento); 
     
